@@ -1,0 +1,403 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue May  6 08:26:40 2025
+# Process ID         : 13932
+# Current directory  : D:/vivado/test_env1/test_env1.runs/synth_1
+# Command line       : vivado.exe -log proba1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source proba1.tcl
+# Log file           : D:/vivado/test_env1/test_env1.runs/synth_1/proba1.vds
+# Journal file       : D:/vivado/test_env1/test_env1.runs/synth_1\vivado.jou
+# Running On         : DESKTOP-ATE7HHU
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 26100
+# Processor Detail   : AMD Ryzen 5 PRO 7540U w/ Radeon 740M Graphics  
+# CPU Frequency      : 3194 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16338 MB
+# Swap memory        : 6442 MB
+# Total Virtual      : 22781 MB
+# Available Virtual  : 11618 MB
+#-----------------------------------------------------------
+source proba1.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental D:/vivado/test_env1/test_env1.srcs/utils_1/imports/synth_1/proba1.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/vivado/test_env1/test_env1.srcs/utils_1/imports/synth_1/proba1.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top proba1 -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 17644
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1044.656 ; gain = 469.863
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'proba1' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:47]
+INFO: [Synth 8-3491] module 'mpg' declared at 'D:/vivado/test_env1/test_env1.srcs/sources_1/new/mpg.vhd:36' bound to instance 'mpg_comp' of component 'mpg' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:194]
+INFO: [Synth 8-638] synthesizing module 'mpg' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/mpg.vhd:43]
+WARNING: [Synth 8-614] signal 'q3' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/mpg.vhd:73]
+WARNING: [Synth 8-614] signal 'q2' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/mpg.vhd:73]
+INFO: [Synth 8-256] done synthesizing module 'mpg' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/mpg.vhd:43]
+INFO: [Synth 8-3491] module 'fetch' declared at 'D:/vivado/test_env1/test_env1.srcs/sources_1/new/fetch.vhd:36' bound to instance 'fetch_comp' of component 'fetch' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:196]
+INFO: [Synth 8-638] synthesizing module 'fetch' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/fetch.vhd:49]
+WARNING: [Synth 8-614] signal 'pc_reset' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/fetch.vhd:73]
+WARNING: [Synth 8-614] signal 'branch_address' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/fetch.vhd:90]
+WARNING: [Synth 8-614] signal 'adder_output' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/fetch.vhd:90]
+WARNING: [Synth 8-614] signal 'jump_address' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/fetch.vhd:99]
+WARNING: [Synth 8-614] signal 'mux1_output' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/fetch.vhd:99]
+INFO: [Synth 8-256] done synthesizing module 'fetch' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/fetch.vhd:49]
+INFO: [Synth 8-3491] module 'main_control' declared at 'D:/vivado/test_env1/test_env1.srcs/sources_1/new/main_control.vhd:34' bound to instance 'main_comp' of component 'main_control' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:198]
+INFO: [Synth 8-638] synthesizing module 'main_control' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/main_control.vhd:48]
+INFO: [Synth 8-226] default block is never used [D:/vivado/test_env1/test_env1.srcs/sources_1/new/main_control.vhd:63]
+INFO: [Synth 8-256] done synthesizing module 'main_control' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/main_control.vhd:48]
+INFO: [Synth 8-3491] module 'decode' declared at 'D:/vivado/test_env1/test_env1.srcs/sources_1/new/decode_comp.vhd:34' bound to instance 'decode_comp' of component 'decode' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:200]
+INFO: [Synth 8-638] synthesizing module 'decode' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/decode_comp.vhd:50]
+INFO: [Synth 8-3491] module 'reg_file' declared at 'D:/vivado/test_env1/test_env1.srcs/sources_1/new/reg_file.vhd:35' bound to instance 'reg' of component 'reg_file' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/decode_comp.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'reg_file' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/reg_file.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'reg_file' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/reg_file.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'decode' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/decode_comp.vhd:50]
+INFO: [Synth 8-3491] module 'execute' declared at 'D:/vivado/test_env1/test_env1.srcs/sources_1/new/execute.vhd:36' bound to instance 'execute_comp' of component 'execute' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'execute' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/execute.vhd:52]
+WARNING: [Synth 8-614] signal 'rd2' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/execute.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'execute' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/execute.vhd:52]
+INFO: [Synth 8-3491] module 'memory' declared at 'D:/vivado/test_env1/test_env1.srcs/sources_1/new/memory.vhd:36' bound to instance 'memory_comp' of component 'memory' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:204]
+INFO: [Synth 8-638] synthesizing module 'memory' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/memory.vhd:47]
+WARNING: [Synth 8-614] signal 'alu_in' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/memory.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'memory' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/memory.vhd:47]
+WARNING: [Synth 8-614] signal 'instr' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:209]
+WARNING: [Synth 8-614] signal 'next_instr' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:209]
+WARNING: [Synth 8-614] signal 'rd1' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:209]
+WARNING: [Synth 8-614] signal 'rd2' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:209]
+WARNING: [Synth 8-614] signal 'ext_imm' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:209]
+WARNING: [Synth 8-614] signal 'alu_res' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:209]
+WARNING: [Synth 8-614] signal 'mem_data' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:209]
+WARNING: [Synth 8-614] signal 'write_data' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:209]
+WARNING: [Synth 8-614] signal 'reg_dst' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+WARNING: [Synth 8-614] signal 'ext_op' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+WARNING: [Synth 8-614] signal 'reg_write' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+WARNING: [Synth 8-614] signal 'alu_src' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+WARNING: [Synth 8-614] signal 'branch' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+WARNING: [Synth 8-614] signal 'jump' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+WARNING: [Synth 8-614] signal 'mem_write' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+WARNING: [Synth 8-614] signal 'memto_reg' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+WARNING: [Synth 8-614] signal 'alu_op' is read in the process but is not in the sensitivity list [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:223]
+INFO: [Synth 8-3491] module 'ssd' declared at 'D:/vivado/test_env1/test_env1.srcs/sources_1/new/ssd.vhd:35' bound to instance 'ssd_comp' of component 'ssd' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:246]
+INFO: [Synth 8-638] synthesizing module 'ssd' [D:/vivado/test_env1/test_env1.srcs/sources_1/new/ssd.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ssd' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/ssd.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'proba1' (0#1) [D:/vivado/test_env1/test_env1.srcs/sources_1/new/proba1.vhd:47]
+WARNING: [Synth 8-7129] Port instruction[15] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[14] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instruction[13] in module decode is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[12] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[11] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[10] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[9] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[8] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[7] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[6] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[5] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[4] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[3] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[2] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[1] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port instr[0] in module main_control is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[7] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[6] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[5] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[4] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module proba1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1151.758 ; gain = 576.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1151.758 ; gain = 576.965
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1151.758 ; gain = 576.965
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1151.758 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/college/ca/utcn-ca-nexys-a7-100t.xdc]
+Finished Parsing XDC File [D:/college/ca/utcn-ca-nexys-a7-100t.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/college/ca/utcn-ca-nexys-a7-100t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/proba1_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/proba1_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1226.242 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1226.242 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1226.242 ; gain = 651.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1226.242 ; gain = 651.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 1226.242 ; gain = 651.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1226.242 ; gain = 651.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   16 Bit       Adders := 3     
+	   3 Input   16 Bit       Adders := 1     
++---XORs : 
+	   2 Input     16 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---RAMs : 
+	              128 Bit	(8 X 16 bit)          RAMs := 1     
++---Muxes : 
+	 257 Input   16 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 6     
+	   4 Input   16 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 2     
+	   8 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port led[15] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[14] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[13] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[12] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[11] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[10] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[9] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port led[8] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[7] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[6] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[5] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port an[4] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[4] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[3] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[2] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port btn[1] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[15] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[14] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[13] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[12] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[11] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[10] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[9] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[8] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[4] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[3] in module proba1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port sw[1] in module proba1 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:27 . Memory (MB): peak = 1226.242 ; gain = 651.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------------------------+-----------+----------------------+-----------------+
+|proba1      | memory_comp/ram_reg          | Implied   | 256 x 16             | RAM256X1S x 16  | 
+|proba1      | decode_comp/reg/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6      | 
++------------+------------------------------+-----------+----------------------+-----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1347.352 ; gain = 772.559
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1426.906 ; gain = 852.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++------------+------------------------------+-----------+----------------------+-----------------+
+|Module Name | RTL Object                   | Inference | Size (Depth x Width) | Primitives      | 
++------------+------------------------------+-----------+----------------------+-----------------+
+|proba1      | memory_comp/ram_reg          | Implied   | 256 x 16             | RAM256X1S x 16  | 
+|proba1      | decode_comp/reg/reg_file_reg | Implied   | 8 x 16               | RAM32M x 6      | 
++------------+------------------------------+-----------+----------------------+-----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:00:36 . Memory (MB): peak = 1426.906 ; gain = 852.113
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1594.910 ; gain = 1020.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1594.910 ; gain = 1020.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1594.910 ; gain = 1020.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1594.910 ; gain = 1020.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1594.910 ; gain = 1020.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1594.910 ; gain = 1020.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    22|
+|3     |LUT1      |     8|
+|4     |LUT2      |    10|
+|5     |LUT3      |    58|
+|6     |LUT4      |    20|
+|7     |LUT5      |    54|
+|8     |LUT6      |   121|
+|9     |MUXF7     |    30|
+|10    |RAM256X1S |    16|
+|11    |RAM32M    |     6|
+|12    |FDCE      |    16|
+|13    |FDRE      |    19|
+|14    |IBUF      |     7|
+|15    |OBUF      |    19|
+|16    |OBUFT     |    12|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1594.910 ; gain = 1020.117
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 28 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:38 . Memory (MB): peak = 1594.910 ; gain = 945.633
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1594.910 ; gain = 1020.117
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1604.090 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 74 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1607.773 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7(x2), MUXF8, RAMS64E(x4)): 16 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 6 instances
+
+Synth Design complete | Checksum: db5c04de
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:01:03 . Memory (MB): peak = 1607.773 ; gain = 1238.348
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1607.773 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivado/test_env1/test_env1.runs/synth_1/proba1.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file proba1_utilization_synth.rpt -pb proba1_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue May  6 08:27:56 2025...
